@@ -3,6 +3,10 @@ while True: #means that the program will be repeated without restarting forever 
     num1 = int(input("Please Enter A Number: ")) #sets num1 to an integer which the user enters
     num2 = int(input("Please Enter A Number: ")) #sets num2 to an integer which the user enters
 
+    if num2 == 0:
+        print("Please try again")
+        continue
+
     ops = ['+', '-', 'x', '/'] #sets the variable ops to a list of the available operations
 
     for number in range(4): #does it four times

@@ -5,6 +5,10 @@ while True: #means the program repeats forever without restarting
     num1 = int(input("enter a num: ")) #sets num1 to an integer which the user enters
     num2 = int(input("enter second num: ")) #sets num2 to an integer which the user enters
 
+    if num2 == 0: #checks if dividing by 0
+        print("try again")
+        continue #goes to the end of the loop
+
     ops = ["+","-","*","/"] #sets the variable ops to a list of the available operations
 
     for num in range(4): #does the loop four times

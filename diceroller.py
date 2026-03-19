@@ -7,7 +7,7 @@ while True:
     print("0")
     break
 
-  if sides.isalpha():
+  if not sides.isdigit():
     print("Please try again later!")
     break
     

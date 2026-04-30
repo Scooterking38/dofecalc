@@ -3,8 +3,10 @@ import random
 print("Welcome to higher or lower.")
 print("\nI have thought of a number between 1 and 100.")
 print("You are aiming for the lowest score.")
+hscore = False
 
 while True:
+    print(f"Current best score: {hscore}")
     score = 0
     number = int(random.randint(1,100))
     
@@ -28,5 +30,10 @@ while True:
         print(f"Your score is: {score}.")
     
     print(f"\nYour final score is: {score}.")
+    if score < hscore:
+        hscore = score
+        print("New High Score!")
 
     print("\n\n\nNEW ROUND:\n")
+    
+print(f"Current best score: {hscore}")

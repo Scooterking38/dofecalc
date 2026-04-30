@@ -9,26 +9,26 @@ while True:
     if not hscore:
         print(f"Current best score: {hscore}")
     else:
-        print("No score set.")
+        print("\nNo score set.")
     
     score = 0
     number = int(random.randint(1,100))
     
     while True:
         
-        guess = int(input("Make your guess: "))
+        guess = int(input("\nMake your guess: "))
         
         if guess == number:
-            print(f"Well done you guessed the number {number}")
+            print(f"\nWell done you guessed the number {number}")
             break
         
         if guess > number:
-            print("Lower")
+            print("\nLower")
             score = score + 1
             
         
         if guess < number:
-            print("Higher")
+            print("\nHigher")
             score = score + 1
             
         print(f"Your score is: {score}.")

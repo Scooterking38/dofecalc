@@ -6,7 +6,11 @@ print("You are aiming for the lowest score.")
 hscore = False
 
 while True:
-    print(f"Current best score: {hscore}")
+    if != hscore:
+        print(f"Current best score: {hscore}")
+    else:
+        print("No score set.")
+    
     score = 0
     number = int(random.randint(1,100))
     

@@ -6,7 +6,7 @@ print("You are aiming for the lowest score.")
 hscore = False
 
 while True:
-    if != hscore:
+    if not hscore:
         print(f"Current best score: {hscore}")
     else:
         print("No score set.")

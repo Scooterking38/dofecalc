@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 print("Welcome to higher or lower.")
 print("\nI have thought of a number between 1 and 100.")
@@ -12,7 +12,7 @@ while True:
         print("\nNo score set.")
     
     score = 0
-    number = int(random.randint(1,100))
+    number = int(randint(1,100))
     
     while True:
         

@@ -10,3 +10,11 @@ def check(chars):
 
 digits = set("0123456789")
 if check(digits): print("Your password has digits in. +1 Complexity")    
+
+capitals = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+if check(capitals): print("Your password has capitals in. +1 Complexity")    
+
+lowercase = set("abcdefghijklmnopqrstuvwxyz")
+if check(lowercase): print("Your password has lowercases in. +1 Complexity")
+
+print(f"Your final score is {complexity}/3.")

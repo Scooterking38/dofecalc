@@ -18,4 +18,7 @@ if check(capitals): print("Your password has capitals in. +1 Complexity")
 lowercase = set("abcdefghijklmnopqrstuvwxyz")
 if check(lowercase): print("Your password has lowercases in. +1 Complexity")
 
-print(f"Your final score is {complexity}/3.")
+special = set("!£$%^&*?/>.,<#@';:-_")
+if check(special): print("Your password has Special characters in. +1 Complexity")
+
+print(f"Your final score is {complexity}/4.")

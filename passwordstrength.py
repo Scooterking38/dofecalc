@@ -3,6 +3,7 @@ complexity = 0
 
 def check(chars):
     if len(password.intersection(chars)) > 0:
+        global complexity
         complexity += 1
         return True
     else:

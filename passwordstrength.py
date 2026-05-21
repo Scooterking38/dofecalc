@@ -10,15 +10,13 @@ def check(chars):
         return False
 
 digits = set("0123456789")
-if check(digits): print("Your password has digits in. +1 Complexity")    
-
 capitals = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-if check(capitals): print("Your password has capitals in. +1 Complexity")    
-
 lowercase = set("abcdefghijklmnopqrstuvwxyz")
-if check(lowercase): print("Your password has lowercases in. +1 Complexity")
-
 special = set("!£$%^&*?/>.,<#@';:-_")
+
+if check(digits): print("Your password has digits in. +1 Complexity")    
+if check(capitals): print("Your password has capitals in. +1 Complexity")    
+if check(lowercase): print("Your password has lowercases in. +1 Complexity")
 if check(special): print("Your password has Special characters in. +1 Complexity")
 
 print(f"Your final score is {complexity}/4.")
